@@ -8,3 +8,42 @@ body{
 h1{
     color: #2c7
 }
+
+#grid{
+  display: grid;
+  grid-template-areas:
+    "sidebar  header"
+    "sidebar content"
+    "sidebar  footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+#header{
+  grid-area: header;
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#sidebar{
+  grid-area: sidebar;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+#content{
+  grid-area: content;
+  background: #fff;
+  padding: 20px;
+}
+
+#footer{
+  grid-area: footer;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
