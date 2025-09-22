@@ -13,7 +13,6 @@
   grid-area: header;
   background: #4CAF50;
   color: white;
-  text-align: center;
   padding: 20px;
 }
 
@@ -23,10 +22,36 @@
   padding: 20px;
 }
 
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+#sidebar li {
+  margin: 8px 0;
+}
+#sidebar a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+#sidebar a.active {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
 #content{
   grid-area: content;
   background: #fff;
   padding: 20px;
+}
+
+.content-section {
+  display: none; 
+}
+.content-section.active {
+  display: block; 
 }
 
 #footer{

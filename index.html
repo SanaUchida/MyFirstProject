@@ -7,11 +7,22 @@
     </head>
     <body>
         <div id="grid">
-            <div id="header">ヘッダー</div>
-            <div id="sidebar">サイドバー</div>
-            <div id="content">コンテンツ</div>
+            <div id="header">ChatGPT</div>
+            <div id="sidebar">
+                <ul>
+                    <li><a onclick="showContent('section1')">第1章</a></li>
+                    <li><a onclick="showContent('section2')">第2章</a></li>
+                    <li><a onclick="showContent('section3')">第3章</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="section1" class="content-section active">ここは第1章の内容です。</div>
+                <div id="section2" class="content-section">ここは第2章の内容です。</div>
+                <div id="section3" class="content-section">ここは第3章の内容です。</div>
+            </div>
             <div id="footer">フッター</div>
         </div>
+
         <script src="script.js"></script>
     </body>
 </html>
